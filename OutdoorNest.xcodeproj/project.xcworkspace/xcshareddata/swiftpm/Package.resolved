@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "acnetwork",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/applecodingacademy/ACNetwork",
+      "state" : {
+        "revision" : "6697aac5295857016c1f05ea2f2c8655edd7aa09",
+        "version" : "0.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}

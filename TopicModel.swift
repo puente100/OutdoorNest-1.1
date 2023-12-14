@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+
+// MARK: - Topics
+struct Topics: Codable {
+    let total, limit, start: String
+    let data: [Topic]
+}
+
+// MARK: - Topic
+struct Topic: Codable {
+    let id, name: String
+}

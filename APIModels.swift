@@ -6,3 +6,7 @@
 //
 
 import Foundation
+// MARK: - ConfigurationAPI
+struct ConfigurationAPI: Codable {
+}
+

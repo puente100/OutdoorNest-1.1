@@ -11,8 +11,19 @@
 		EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F42B10230E008B6939 /* ContentView.swift */; };
 		EDB3D7F72B102310008B6939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D7F62B102310008B6939 /* Assets.xcassets */; };
 		EDB3D7FA2B102310008B6939 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D7F92B102310008B6939 /* Preview Assets.xcassets */; };
-		EDB3D7FC2B102310008B6939 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7FB2B102310008B6939 /* Persistence.swift */; };
 		EDB3D7FF2B102310008B6939 /* OutdoorNest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7FD2B102310008B6939 /* OutdoorNest.xcdatamodeld */; };
+		EDB3D80B2B1386F0008B6939 /* ActivitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D80A2B1386F0008B6939 /* ActivitiesModel.swift */; };
+		EDB3D8102B155DD9008B6939 /* NetworkEndpointGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D80F2B155DD9008B6939 /* NetworkEndpointGenerator.swift */; };
+		EDB3D8142B162F50008B6939 /* ParksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8132B162F50008B6939 /* ParksModel.swift */; };
+		EDB3D8162B1634DE008B6939 /* AlertsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8152B1634DE008B6939 /* AlertsModel.swift */; };
+		EDB3D8182B1634F4008B6939 /* AmenitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8172B1634F4008B6939 /* AmenitiesModel.swift */; };
+		EDB3D81A2B17C27A008B6939 /* TopicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8192B17C279008B6939 /* TopicModel.swift */; };
+		EDB3D81C2B17C41A008B6939 /* FeesPassesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D81B2B17C419008B6939 /* FeesPassesModel.swift */; };
+		EDB3D81F2B1A7EA8008B6939 /* ACNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = EDB3D81E2B1A7EA8008B6939 /* ACNetwork */; };
+		EDB3D8222B1A8987008B6939 /* ParksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8212B1A8987008B6939 /* ParksViewModel.swift */; };
+		EDB3D83E2B1BF6C9008B6939 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D83D2B1BF6C9008B6939 /* APIModels.swift */; };
+		EDB3D8402B1C1C56008B6939 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D83F2B1C1C56008B6939 /* Persistence.swift */; };
+		EDB3D8422B1C1C7C008B6939 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D8412B1C1C7C008B6939 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +32,18 @@
 		EDB3D7F42B10230E008B6939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDB3D7F62B102310008B6939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB3D7F92B102310008B6939 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EDB3D7FB2B102310008B6939 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EDB3D7FE2B102310008B6939 /* OutdoorNest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OutdoorNest.xcdatamodel; sourceTree = "<group>"; };
+		EDB3D80A2B1386F0008B6939 /* ActivitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesModel.swift; sourceTree = "<group>"; };
+		EDB3D80F2B155DD9008B6939 /* NetworkEndpointGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEndpointGenerator.swift; sourceTree = "<group>"; };
+		EDB3D8132B162F50008B6939 /* ParksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksModel.swift; sourceTree = "<group>"; };
+		EDB3D8152B1634DE008B6939 /* AlertsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsModel.swift; sourceTree = "<group>"; };
+		EDB3D8172B1634F4008B6939 /* AmenitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesModel.swift; sourceTree = "<group>"; };
+		EDB3D8192B17C279008B6939 /* TopicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModel.swift; sourceTree = "<group>"; };
+		EDB3D81B2B17C419008B6939 /* FeesPassesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesPassesModel.swift; sourceTree = "<group>"; };
+		EDB3D8212B1A8987008B6939 /* ParksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksViewModel.swift; sourceTree = "<group>"; };
+		EDB3D83D2B1BF6C9008B6939 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		EDB3D83F2B1C1C56008B6939 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EDB3D8412B1C1C7C008B6939 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB3D81F2B1A7EA8008B6939 /* ACNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +79,12 @@
 			children = (
 				EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */,
 				EDB3D7F42B10230E008B6939 /* ContentView.swift */,
-				EDB3D7F62B102310008B6939 /* Assets.xcassets */,
-				EDB3D7FB2B102310008B6939 /* Persistence.swift */,
+				EDB3D8202B1A8907008B6939 /* ViewModels */,
+				EDB3D8062B10232D008B6939 /* Models */,
+				EDB3D8052B102323008B6939 /* Resources */,
+				EDB3D8072B10233A008B6939 /* System */,
+				EDB3D8432B1C26DF008B6939 /* Persistence */,
+				EDB3D80C2B138B99008B6939 /* Network */,
 				EDB3D7FD2B102310008B6939 /* OutdoorNest.xcdatamodeld */,
 				EDB3D7F82B102310008B6939 /* Preview Content */,
 			);
@@ -71,6 +97,63 @@
 				EDB3D7F92B102310008B6939 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EDB3D8052B102323008B6939 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EDB3D8062B10232D008B6939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3D8132B162F50008B6939 /* ParksModel.swift */,
+				EDB3D8172B1634F4008B6939 /* AmenitiesModel.swift */,
+				EDB3D80A2B1386F0008B6939 /* ActivitiesModel.swift */,
+				EDB3D8152B1634DE008B6939 /* AlertsModel.swift */,
+				EDB3D8192B17C279008B6939 /* TopicModel.swift */,
+				EDB3D81B2B17C419008B6939 /* FeesPassesModel.swift */,
+				EDB3D83D2B1BF6C9008B6939 /* APIModels.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EDB3D8072B10233A008B6939 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3D7F62B102310008B6939 /* Assets.xcassets */,
+			);
+			name = System;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EDB3D80C2B138B99008B6939 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3D80F2B155DD9008B6939 /* NetworkEndpointGenerator.swift */,
+				EDB3D8412B1C1C7C008B6939 /* Configuration.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		EDB3D8202B1A8907008B6939 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3D8212B1A8987008B6939 /* ParksViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		EDB3D8432B1C26DF008B6939 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				EDB3D83F2B1C1C56008B6939 /* Persistence.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +172,9 @@
 			dependencies = (
 			);
 			name = OutdoorNest;
+			packageProductDependencies = (
+				EDB3D81E2B1A7EA8008B6939 /* ACNetwork */,
+			);
 			productName = OutdoorNest;
 			productReference = EDB3D7EF2B10230E008B6939 /* OutdoorNest.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +203,9 @@
 				Base,
 			);
 			mainGroup = EDB3D7E62B10230E008B6939;
+			packageReferences = (
+				EDB3D81D2B1A7EA8008B6939 /* XCRemoteSwiftPackageReference "ACNetwork" */,
+			);
 			productRefGroup = EDB3D7F02B10230E008B6939 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,10 +232,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDB3D7FC2B102310008B6939 /* Persistence.swift in Sources */,
+				EDB3D8162B1634DE008B6939 /* AlertsModel.swift in Sources */,
+				EDB3D81A2B17C27A008B6939 /* TopicModel.swift in Sources */,
+				EDB3D8422B1C1C7C008B6939 /* Configuration.swift in Sources */,
+				EDB3D8182B1634F4008B6939 /* AmenitiesModel.swift in Sources */,
 				EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */,
+				EDB3D80B2B1386F0008B6939 /* ActivitiesModel.swift in Sources */,
 				EDB3D7FF2B102310008B6939 /* OutdoorNest.xcdatamodeld in Sources */,
+				EDB3D81C2B17C41A008B6939 /* FeesPassesModel.swift in Sources */,
+				EDB3D8402B1C1C56008B6939 /* Persistence.swift in Sources */,
+				EDB3D8222B1A8987008B6939 /* ParksViewModel.swift in Sources */,
 				EDB3D7F32B10230E008B6939 /* OutdoorNestApp.swift in Sources */,
+				EDB3D83E2B1BF6C9008B6939 /* APIModels.swift in Sources */,
+				EDB3D8142B162F50008B6939 /* ParksModel.swift in Sources */,
+				EDB3D8102B155DD9008B6939 /* NetworkEndpointGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +451,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDB3D81D2B1A7EA8008B6939 /* XCRemoteSwiftPackageReference "ACNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/applecodingacademy/ACNetwork";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDB3D81E2B1A7EA8008B6939 /* ACNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDB3D81D2B1A7EA8008B6939 /* XCRemoteSwiftPackageReference "ACNetwork" */;
+			productName = ACNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		EDB3D7FD2B102310008B6939 /* OutdoorNest.xcdatamodeld */ = {

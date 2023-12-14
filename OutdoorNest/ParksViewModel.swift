@@ -1,5 +1,5 @@
 //
-//  ParkViewModel.swift
+//  ParksViewModel.swift
 //  OutdoorNest
 //
 //  Created by Daniel Puente on 12/1/23.
@@ -10,7 +10,8 @@ import SwiftUI
 final class ParksViewModel: ObservableObject {
     let persistence = Persistence.shared
     
-    @Published var parks: [Park] = []
+    @Published
+    private(set) var parksData: ParksResponse?
     
     init() {
         Task {
@@ -19,12 +20,15 @@ final class ParksViewModel: ObservableObject {
     }
     
     @MainActor func initData() async {
-        do{
-            (parks) = try await (persistence.getParks())
-            
-        }catch {
+        do {
+            if let parks = try await persistence.getParks() {
+                self.parksData = parks
+                print(parks)
+            } else {
+                print("No data")
+            }
+        } catch {
             print(error)
         }
-        
     }
 }
