@@ -39,7 +39,7 @@ struct Park: Codable, Identifiable {
     let directionsURL: String?
     let operatingHours: [OperatingHour]?
     let addresses: [Address]?
-//    let images: [ParkImage]?
+    let images: [Images]?
     let weatherInfo: String?
     let name:String?
     let designation: String?
@@ -48,7 +48,7 @@ struct Park: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case id, url, fullName, parkCode, description, latitude, longitude, latLong, activities, topics, states, contacts, entranceFees, entrancePasses, fees, directionsInfo
         case directionsURL = "directionsUrl"
-        case operatingHours, addresses /*images*/, weatherInfo, name, designation, relevanceScore
+        case operatingHours, addresses, images, weatherInfo, name, designation, relevanceScore
     }
 }
 
@@ -112,8 +112,8 @@ struct Entrance: Codable {
     let title: String
 }
 
-// MARK: - ParkImage
-struct ParkImage: Codable {
+// MARK: - Image
+struct Images: Codable {
     let credit: String
     let title: String
     let altText: String
