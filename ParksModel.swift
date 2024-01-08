@@ -26,7 +26,7 @@ struct Park: Codable, Identifiable {
     let parkCode: String?
     let description: String?
     let latitude: String?
-    let longitude: String
+    let longitude: String?
     let latLong: String?
     let activities: [Activity]?
     let topics: [Topic]?
