@@ -10,7 +10,7 @@ struct ParkView: View {
     let park: Park
     
     var body: some View {
-        VStack {
+        HStack {
             if let imageUrlString = park.images?.first?.url,
                let imageUrl = URL(string: imageUrlString) {
                 AsyncImage(url: imageUrl) { phase in
@@ -18,28 +18,39 @@ struct ParkView: View {
                     case .success(let image):
                         image
                             .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(height :150) // Adjust the height as needed
-                            .clipped()
-                    case .failure(_):
-                        ProgressView()
-                    case .empty:
-                        ProgressView()
-                    @unknown default:
-                        EmptyView()
+                            .frame(width: 100, height: 100)
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(Circle())
+                            .overlay(Circle().stroke(.gray, lineWidth: 2))
+                        
+                    default:
+                        Image(systemName: "tree.fill")
+                        
                     }
                 }
             } else {
-                ProgressView() // Show a progress view or placeholder if URL is missing or invalid
+                Image(systemName: "tree.fill")
+                    .frame(width: 100, height: 100)
+
             }
-            
-            Text(park.name ?? "")
-                .font(.title)
-   
-        }
-        .padding()
-        .background(Color.green.opacity(0.2))
+            VStack {
+                Text(park.name)
+                    .multilineTextAlignment(.center)
+                    .font(.title3)
+                    .foregroundStyle(Color.customColor.lightGrayColor)
+                    .frame(maxWidth: .infinity)
+                if let designation = park.designation {
+                    Text(designation)
+                        .multilineTextAlignment(.center)
+                        .font(.headline)
+                        .foregroundStyle(Color.customColor.lightGreenColor)
+                }
+            }
+            .padding()
+            .background(Color.customColor.primaryGreenColor)
         .cornerRadius(10)
+
+        }
     }
 }
 
@@ -49,7 +60,7 @@ struct ParkView_Previews: PreviewProvider {
                         url: nil,
                         fullName: "Parque de prueba",
                         parkCode: nil,
-                        description: nil,
+                        description: "",
                         latitude: nil,
                         longitude: nil,
                         latLong: nil,
@@ -67,8 +78,8 @@ struct ParkView_Previews: PreviewProvider {
                         images: nil,
                         weatherInfo: nil,
                         name: "Parque de prueba",
-                        designation: nil,
-                        relevanceScore: nil)
+                        designation: "National Monument",
+                        relevanceScore: 3)
         ParkView(park: park)
     }
 }

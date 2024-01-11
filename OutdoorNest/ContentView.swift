@@ -13,25 +13,26 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            
             if let parks = parksVM.parksData?.data {
                 List {
                     Section (header:
                                 HStack {
                         Text("National parks")
                             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                        
-                    })
-                    {
-                    ForEach(parks, id: \.id) { park in
-                        NavigationLink {
-                            Text(park.fullName)
-                        } label: {
-                            ParkView(park: park)
-                        }
+                        Spacer()
+                        Image(systemName: "person.crop.circle")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }) {
+                        ForEach(parks, id: \.id) { park in
+                            NavigationLink {
+                                ParkDetailsView(parkDetailsData: ParkDetailsView.generateListData(with: park))
+                            } label: {
+                                ParkView(park: park)
+                            }
                         }
                     }
-                }
+                }.listStyle(.plain)
             }
         }
     }

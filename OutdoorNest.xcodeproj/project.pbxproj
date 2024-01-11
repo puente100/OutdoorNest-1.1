@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		ED1B30282B46FF6000975E32 /* ParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B30272B46FF6000975E32 /* ParkView.swift */; };
+		ED6A5B702B4EE7300042AAC8 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A5B6F2B4EE7300042AAC8 /* Color.xcassets */; };
+		ED6A5B722B4EE80B0042AAC8 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B712B4EE80B0042AAC8 /* ColorUtils.swift */; };
+		ED6A5B742B4F38340042AAC8 /* ParkDetailsModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B732B4F38340042AAC8 /* ParkDetailsModel .swift */; };
+		ED6A5B762B5076530042AAC8 /* ParkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B752B5076530042AAC8 /* ParkDetailViewModel.swift */; };
 		EDB3D7F32B10230E008B6939 /* OutdoorNestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */; };
 		EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F42B10230E008B6939 /* ContentView.swift */; };
 		EDB3D7F72B102310008B6939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D7F62B102310008B6939 /* Assets.xcassets */; };
@@ -30,6 +34,10 @@
 
 /* Begin PBXFileReference section */
 		ED1B30272B46FF6000975E32 /* ParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkView.swift; sourceTree = "<group>"; };
+		ED6A5B6F2B4EE7300042AAC8 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		ED6A5B712B4EE80B0042AAC8 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		ED6A5B732B4F38340042AAC8 /* ParkDetailsModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkDetailsModel .swift"; sourceTree = "<group>"; };
+		ED6A5B752B5076530042AAC8 /* ParkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewModel.swift; sourceTree = "<group>"; };
 		EDB3D7EF2B10230E008B6939 /* OutdoorNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutdoorNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorNestApp.swift; sourceTree = "<group>"; };
 		EDB3D7F42B10230E008B6939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 				EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */,
 				EDB3D7F42B10230E008B6939 /* ContentView.swift */,
 				EDB623AA2B4A1EFA00E4A4A2 /* ParkDetailsView.swift */,
+				ED1B30272B46FF6000975E32 /* ParkView.swift */,
 				EDB3D8202B1A8907008B6939 /* ViewModels */,
 				EDB3D8062B10232D008B6939 /* Models */,
 				EDB3D8052B102323008B6939 /* Resources */,
@@ -116,7 +125,7 @@
 		EDB3D8052B102323008B6939 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ED1B30272B46FF6000975E32 /* ParkView.swift */,
+				ED6A5B712B4EE80B0042AAC8 /* ColorUtils.swift */,
 			);
 			name = Resources;
 			path = ..;
@@ -132,6 +141,7 @@
 				EDB3D8192B17C279008B6939 /* TopicModel.swift */,
 				EDB3D81B2B17C419008B6939 /* FeesPassesModel.swift */,
 				EDB3D83D2B1BF6C9008B6939 /* APIModels.swift */,
+				ED6A5B732B4F38340042AAC8 /* ParkDetailsModel .swift */,
 			);
 			name = Models;
 			path = ..;
@@ -141,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				EDB3D7F62B102310008B6939 /* Assets.xcassets */,
+				ED6A5B6F2B4EE7300042AAC8 /* Color.xcassets */,
 			);
 			name = System;
 			path = ..;
@@ -159,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				EDB3D8212B1A8987008B6939 /* ParksViewModel.swift */,
+				ED6A5B752B5076530042AAC8 /* ParkDetailViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -237,6 +249,7 @@
 			files = (
 				EDB3D7FA2B102310008B6939 /* Preview Assets.xcassets in Resources */,
 				EDB3D7F72B102310008B6939 /* Assets.xcassets in Resources */,
+				ED6A5B702B4EE7300042AAC8 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,11 +271,14 @@
 				EDB3D7FF2B102310008B6939 /* OutdoorNest.xcdatamodeld in Sources */,
 				EDB3D81C2B17C41A008B6939 /* FeesPassesModel.swift in Sources */,
 				EDB3D8402B1C1C56008B6939 /* Persistence.swift in Sources */,
+				ED6A5B722B4EE80B0042AAC8 /* ColorUtils.swift in Sources */,
 				EDB3D8222B1A8987008B6939 /* ParksViewModel.swift in Sources */,
 				EDB3D7F32B10230E008B6939 /* OutdoorNestApp.swift in Sources */,
 				EDB3D83E2B1BF6C9008B6939 /* APIModels.swift in Sources */,
 				EDB3D8142B162F50008B6939 /* ParksModel.swift in Sources */,
 				EDB3D8102B155DD9008B6939 /* NetworkEndpointGenerator.swift in Sources */,
+				ED6A5B762B5076530042AAC8 /* ParkDetailViewModel.swift in Sources */,
+				ED6A5B742B4F38340042AAC8 /* ParkDetailsModel .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

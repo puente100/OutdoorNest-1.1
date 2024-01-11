@@ -95,7 +95,7 @@ struct Pass: Codable {
     let exceptions: String
     let payGovPurchaseURL: String
     let cost: String
-    let image: [Image]
+    let image: [PassImage]
     let description: String
     let paymentDescription: String
     let category: String
@@ -115,8 +115,8 @@ struct Pass: Codable {
     }
 }
 
-// MARK: - Image
-struct Image: Codable {
+// MARK: - PassImage
+struct PassImage: Codable {
     let credit: String
     let title: String
     let altText: String

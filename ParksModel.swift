@@ -24,7 +24,7 @@ struct Park: Codable, Identifiable {
     let url: String?
     let fullName: String
     let parkCode: String?
-    let description: String?
+    let description: String
     let latitude: String?
     let longitude: String?
     let latLong: String?
@@ -39,11 +39,11 @@ struct Park: Codable, Identifiable {
     let directionsURL: String?
     let operatingHours: [OperatingHour]?
     let addresses: [Address]?
-    let images: [Images]?
+    let images: [ParkImages]?
     let weatherInfo: String?
-    let name:String?
+    let name:String
     let designation: String?
-    let relevanceScore: Int?
+    let relevanceScore: Int
 
     enum CodingKeys: String, CodingKey {
         case id, url, fullName, parkCode, description, latitude, longitude, latLong, activities, topics, states, contacts, entranceFees, entrancePasses, fees, directionsInfo
@@ -113,7 +113,7 @@ struct Entrance: Codable {
 }
 
 // MARK: - Image
-struct Images: Codable {
+struct ParkImages: Codable {
     let credit: String
     let title: String
     let altText: String
