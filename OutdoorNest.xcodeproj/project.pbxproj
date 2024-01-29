@@ -12,6 +12,7 @@
 		ED6A5B722B4EE80B0042AAC8 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B712B4EE80B0042AAC8 /* ColorUtils.swift */; };
 		ED6A5B742B4F38340042AAC8 /* ParkDetailsModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B732B4F38340042AAC8 /* ParkDetailsModel .swift */; };
 		ED6A5B762B5076530042AAC8 /* ParkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B752B5076530042AAC8 /* ParkDetailViewModel.swift */; };
+		ED6A5B7A2B55D3590042AAC8 /* ParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B792B55D3580042AAC8 /* ParkMapView.swift */; };
 		EDB3D7F32B10230E008B6939 /* OutdoorNestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */; };
 		EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F42B10230E008B6939 /* ContentView.swift */; };
 		EDB3D7F72B102310008B6939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D7F62B102310008B6939 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		ED6A5B712B4EE80B0042AAC8 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		ED6A5B732B4F38340042AAC8 /* ParkDetailsModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkDetailsModel .swift"; sourceTree = "<group>"; };
 		ED6A5B752B5076530042AAC8 /* ParkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewModel.swift; sourceTree = "<group>"; };
+		ED6A5B792B55D3580042AAC8 /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
 		EDB3D7EF2B10230E008B6939 /* OutdoorNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutdoorNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorNestApp.swift; sourceTree = "<group>"; };
 		EDB3D7F42B10230E008B6939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +75,10 @@
 		ED10F8402B49F5D900257E9C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EDB3D7F42B10230E008B6939 /* ContentView.swift */,
+				EDB623AA2B4A1EFA00E4A4A2 /* ParkDetailsView.swift */,
+				ED1B30272B46FF6000975E32 /* ParkView.swift */,
+				ED6A5B792B55D3580042AAC8 /* ParkMapView.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -97,11 +103,8 @@
 		EDB3D7F12B10230E008B6939 /* OutdoorNest */ = {
 			isa = PBXGroup;
 			children = (
-				ED10F8402B49F5D900257E9C /* Views */,
 				EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */,
-				EDB3D7F42B10230E008B6939 /* ContentView.swift */,
-				EDB623AA2B4A1EFA00E4A4A2 /* ParkDetailsView.swift */,
-				ED1B30272B46FF6000975E32 /* ParkView.swift */,
+				ED10F8402B49F5D900257E9C /* Views */,
 				EDB3D8202B1A8907008B6939 /* ViewModels */,
 				EDB3D8062B10232D008B6939 /* Models */,
 				EDB3D8052B102323008B6939 /* Resources */,
@@ -267,6 +270,7 @@
 				EDB3D8422B1C1C7C008B6939 /* Configuration.swift in Sources */,
 				EDB3D8182B1634F4008B6939 /* AmenitiesModel.swift in Sources */,
 				EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */,
+				ED6A5B7A2B55D3590042AAC8 /* ParkMapView.swift in Sources */,
 				EDB3D80B2B1386F0008B6939 /* ActivitiesModel.swift in Sources */,
 				EDB3D7FF2B102310008B6939 /* OutdoorNest.xcdatamodeld in Sources */,
 				EDB3D81C2B17C41A008B6939 /* FeesPassesModel.swift in Sources */,
@@ -409,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OutdoorNest/Preview Content\"";
@@ -438,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"OutdoorNest/Preview Content\"";

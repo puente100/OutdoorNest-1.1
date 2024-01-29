@@ -32,8 +32,8 @@ struct Park: Codable, Identifiable {
     let topics: [Topic]?
     let states: String?
     let contacts: Contacts?
-    let entranceFees: [Entrance]?
-    let entrancePasses: [Entrance]?
+    let entranceFees: [ParkEntrance]?
+    let entrancePasses: [ParkEntrance]?
     let fees: [Fees]?
     let directionsInfo: String?
     let directionsURL: String?
@@ -106,7 +106,8 @@ enum PhoneNumberType: String, Codable {
 }
 
 // MARK: - Entrance
-struct Entrance: Codable {
+struct ParkEntrance: Codable, Identifiable {
+    var id: String { "\(cost)\(title)\(description)" }
     let cost: String
     let description: String
     let title: String

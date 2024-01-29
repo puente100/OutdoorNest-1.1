@@ -37,7 +37,7 @@ struct ParkView: View {
                 Text(park.name)
                     .multilineTextAlignment(.center)
                     .font(.title3)
-                    .foregroundStyle(Color.customColor.lightGrayColor)
+                    .foregroundStyle(Color.customColor.primaryGreenColor)
                     .frame(maxWidth: .infinity)
                 if let designation = park.designation {
                     Text(designation)
@@ -47,7 +47,7 @@ struct ParkView: View {
                 }
             }
             .padding()
-            .background(Color.customColor.primaryGreenColor)
+            .background(Color.white)
         .cornerRadius(10)
 
         }

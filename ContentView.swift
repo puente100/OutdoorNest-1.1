@@ -39,7 +39,6 @@ struct ContentView: View {
 }
 
 
-// Your preview code seems to have a typo, it should be `Preview` instead of `#Preview`
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

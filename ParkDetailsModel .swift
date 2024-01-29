@@ -16,6 +16,7 @@ enum ParkDetailsCellType: String {
     case heroImage
     case description
     case activities
+    case entrancePasses
 }
 
 struct ParkDetailsImage: ParkDetailsData {
@@ -45,6 +46,16 @@ struct ParkDetailsActivities: ParkDetailsData {
 
     init(acitivities: [String]) {
         self.acitivities = acitivities
+    }
+}
+
+struct ParkDetailsEntrancePasses: ParkDetailsData {
+    var id: String = ParkDetailsCellType.entrancePasses.rawValue
+    var type: ParkDetailsCellType = .entrancePasses
+    var entrancePasses: [ParkEntrance]
+
+    init(entrancePasses: [ParkEntrance]) {
+        self.entrancePasses = entrancePasses
     }
 }
 
