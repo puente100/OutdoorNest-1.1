@@ -10,6 +10,7 @@ import ACNetwork
 
 struct ContentView: View {
     @ObservedObject var parksVM = ParksViewModel()
+    @State var launch = false
     
     var body: some View {
         NavigationStack {
@@ -34,6 +35,21 @@ struct ContentView: View {
                     }
                 }.listStyle(.plain)
             }
+        }
+        .frame (maxWidth: .infinity, maxHeight: .infinity)
+        .overlay {
+            Rectangle()
+                .fill(.ultraThinMaterial)
+                .ignoresSafeArea()
+                .overlay {
+                    LoginView(back: $launch)
+                }
+                .opacity(launch ? 1.0 : 0.0)
+                .animation(.easeOut.delay(launch ? 0 : 1), value: launch)
+            
+        }
+        .onAppear {
+            launch = true
         }
     }
 }

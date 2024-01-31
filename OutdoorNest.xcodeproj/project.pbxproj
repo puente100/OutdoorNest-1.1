@@ -13,6 +13,9 @@
 		ED6A5B742B4F38340042AAC8 /* ParkDetailsModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B732B4F38340042AAC8 /* ParkDetailsModel .swift */; };
 		ED6A5B762B5076530042AAC8 /* ParkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B752B5076530042AAC8 /* ParkDetailViewModel.swift */; };
 		ED6A5B7A2B55D3590042AAC8 /* ParkMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B792B55D3580042AAC8 /* ParkMapView.swift */; };
+		ED6A5B7C2B55F4110042AAC8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B7B2B55F4110042AAC8 /* LoginView.swift */; };
+		ED851EEF2B5824BC00FFD14C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED851EEE2B5824BC00FFD14C /* Extensions.swift */; };
+		ED8807E22B5EF9EB002FF3D7 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8807E12B5EF9EB002FF3D7 /* Modifiers.swift */; };
 		EDB3D7F32B10230E008B6939 /* OutdoorNestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */; };
 		EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F42B10230E008B6939 /* ContentView.swift */; };
 		EDB3D7F72B102310008B6939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D7F62B102310008B6939 /* Assets.xcassets */; };
@@ -40,6 +43,9 @@
 		ED6A5B732B4F38340042AAC8 /* ParkDetailsModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkDetailsModel .swift"; sourceTree = "<group>"; };
 		ED6A5B752B5076530042AAC8 /* ParkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewModel.swift; sourceTree = "<group>"; };
 		ED6A5B792B55D3580042AAC8 /* ParkMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkMapView.swift; sourceTree = "<group>"; };
+		ED6A5B7B2B55F4110042AAC8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		ED851EEE2B5824BC00FFD14C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ED8807E12B5EF9EB002FF3D7 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		EDB3D7EF2B10230E008B6939 /* OutdoorNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutdoorNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorNestApp.swift; sourceTree = "<group>"; };
 		EDB3D7F42B10230E008B6939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +85,7 @@
 				EDB623AA2B4A1EFA00E4A4A2 /* ParkDetailsView.swift */,
 				ED1B30272B46FF6000975E32 /* ParkView.swift */,
 				ED6A5B792B55D3580042AAC8 /* ParkMapView.swift */,
+				ED6A5B7B2B55F4110042AAC8 /* LoginView.swift */,
 			);
 			name = Views;
 			path = ..;
@@ -129,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				ED6A5B712B4EE80B0042AAC8 /* ColorUtils.swift */,
+				ED851EEE2B5824BC00FFD14C /* Extensions.swift */,
+				ED8807E12B5EF9EB002FF3D7 /* Modifiers.swift */,
 			);
 			name = Resources;
 			path = ..;
@@ -272,12 +281,15 @@
 				EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */,
 				ED6A5B7A2B55D3590042AAC8 /* ParkMapView.swift in Sources */,
 				EDB3D80B2B1386F0008B6939 /* ActivitiesModel.swift in Sources */,
+				ED851EEF2B5824BC00FFD14C /* Extensions.swift in Sources */,
 				EDB3D7FF2B102310008B6939 /* OutdoorNest.xcdatamodeld in Sources */,
 				EDB3D81C2B17C41A008B6939 /* FeesPassesModel.swift in Sources */,
 				EDB3D8402B1C1C56008B6939 /* Persistence.swift in Sources */,
 				ED6A5B722B4EE80B0042AAC8 /* ColorUtils.swift in Sources */,
+				ED8807E22B5EF9EB002FF3D7 /* Modifiers.swift in Sources */,
 				EDB3D8222B1A8987008B6939 /* ParksViewModel.swift in Sources */,
 				EDB3D7F32B10230E008B6939 /* OutdoorNestApp.swift in Sources */,
+				ED6A5B7C2B55F4110042AAC8 /* LoginView.swift in Sources */,
 				EDB3D83E2B1BF6C9008B6939 /* APIModels.swift in Sources */,
 				EDB3D8142B162F50008B6939 /* ParksModel.swift in Sources */,
 				EDB3D8102B155DD9008B6939 /* NetworkEndpointGenerator.swift in Sources */,
