@@ -16,6 +16,7 @@
 		ED6A5B7C2B55F4110042AAC8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A5B7B2B55F4110042AAC8 /* LoginView.swift */; };
 		ED851EEF2B5824BC00FFD14C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED851EEE2B5824BC00FFD14C /* Extensions.swift */; };
 		ED8807E22B5EF9EB002FF3D7 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8807E12B5EF9EB002FF3D7 /* Modifiers.swift */; };
+		ED8807EA2B6DA17C002FF3D7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED8807E92B6DA17C002FF3D7 /* Launch Screen.storyboard */; };
 		EDB3D7F32B10230E008B6939 /* OutdoorNestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */; };
 		EDB3D7F52B10230E008B6939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB3D7F42B10230E008B6939 /* ContentView.swift */; };
 		EDB3D7F72B102310008B6939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB3D7F62B102310008B6939 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		ED6A5B7B2B55F4110042AAC8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ED851EEE2B5824BC00FFD14C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED8807E12B5EF9EB002FF3D7 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		ED8807E92B6DA17C002FF3D7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EDB3D7EF2B10230E008B6939 /* OutdoorNest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutdoorNest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB3D7F22B10230E008B6939 /* OutdoorNestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutdoorNestApp.swift; sourceTree = "<group>"; };
 		EDB3D7F42B10230E008B6939 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				EDB3D7F62B102310008B6939 /* Assets.xcassets */,
 				ED6A5B6F2B4EE7300042AAC8 /* Color.xcassets */,
+				ED8807E92B6DA17C002FF3D7 /* Launch Screen.storyboard */,
 			);
 			name = System;
 			path = ..;
@@ -261,6 +264,7 @@
 			files = (
 				EDB3D7FA2B102310008B6939 /* Preview Assets.xcassets in Resources */,
 				EDB3D7F72B102310008B6939 /* Assets.xcassets in Resources */,
+				ED8807EA2B6DA17C002FF3D7 /* Launch Screen.storyboard in Resources */,
 				ED6A5B702B4EE7300042AAC8 /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,8 +439,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,6 +449,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielPuente.OutdoorNest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,8 +474,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,6 +484,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielPuente.OutdoorNest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
