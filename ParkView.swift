@@ -24,12 +24,12 @@ struct ParkView: View {
                             .overlay(Circle().stroke(.gray, lineWidth: 2))
                         
                     default:
-                        Image(systemName: "tree.fill")
+                        Image(systemName: "tree.ciccle")
                         
                     }
                 }
             } else {
-                Image(systemName: "tree.fill")
+                Image(systemName: "tree.circle")
                     .frame(width: 100, height: 100)
 
             }
